@@ -43,3 +43,7 @@ next-env.d.ts
 # ignore .js file
 *.js
 *.jsx
+
+# Other
+script*
+conversation/*
