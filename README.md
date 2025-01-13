@@ -10,6 +10,7 @@ This project provides a structured way to manage conversations, generate scripts
 
 ### File structure
 
+```text
 project root
 ├── conversations/     # Stores conversation history
 ├── src/
@@ -24,6 +25,7 @@ project root
 ├── .env             # Environment variables
 ├── package.json     # Project dependencies
 └── tsconfig.json    # TypeScript configuration
+```
 
 ## Setup
 
