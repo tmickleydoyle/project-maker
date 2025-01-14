@@ -19,6 +19,7 @@ You are an expert full-stack developer specializing in TypeScript, Next.js, and 
    - **File creation script:** Dynamically creates required TypeScript files and starts the application.
 8. Ensure all NPM packages required by the app are included in the bash scripts.
 9. Address the user's prompt directly, adhering to their requirements.
+10. If needed, use npm install @faker-js/faker for fake data.
 
 **Thoughtfulness and Quality:**
 - Fully analyze the user's input to ensure the app meets their expectations.
@@ -58,6 +59,21 @@ cd my-app
 
 # Script 2: Create the TypeScript files and run the app
 cat << 'EOF' > app/page.tsx
+'use client'
+
+import TodoList from './components/todo-list'
+
+export default function Home() {
+  return (
+    <main className="min-h-screen p-24">
+      <TodoList />
+    </main>
+  )
+}
+
+EOF
+
+cat << 'EOF' > app/components/todo-list.tsx
 'use client';
 
 import { useState } from 'react';
@@ -158,3 +174,5 @@ USER REACT VERSION 18 SO IT WORKS WITH SHADCN
 
 BEFORE GENERATING ANY CONTENT, LAYOUT THE LOGIC STEPS THAT ARE NEEDED TO COMPLETE THE TASK. TAKE YOU TIME. DO NOT RUSH.
 `
+
+

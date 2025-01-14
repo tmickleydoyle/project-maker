@@ -35,6 +35,8 @@ export async function generateResponse(chatSession: ChatSession): Promise<string
     messages.shift();
   }
 
+  console.log('Thinking...')
+
   const response = await openai.chat.completions.create({
     model: "deepseek-chat",
     messages: messages,
