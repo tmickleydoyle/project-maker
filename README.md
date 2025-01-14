@@ -28,14 +28,3 @@ project root
 ├── package.json     # Project dependencies
 └── tsconfig.json    # TypeScript configuration
 ```
-
-## Setup
-
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Configure environment variables in `.env`
-4. Run the project: `npm start`
-
-## Usage
-
-The project provides a CLI interface for managing conversations and executing generated scripts. Use the menu system to navigate through different options.
